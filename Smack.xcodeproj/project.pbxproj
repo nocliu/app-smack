@@ -18,6 +18,7 @@
 		6FD2019D20F50F8000235D06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2019C20F50F8000235D06 /* Constants.swift */; };
 		6FD2019F20F581BB00235D06 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2019E20F581BB00235D06 /* LoginVC.swift */; };
 		6FD201A120F5842700235D06 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD201A020F5842700235D06 /* CreateAccountVC.swift */; };
+		6FD201DD20F8495E00235D06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */; };
 		D61AAB4D5211F384506D7C4C /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6ACB9DCD534CAEBD56D347 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		6FD2019C20F50F8000235D06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6FD2019E20F581BB00235D06 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6FD201A020F5842700235D06 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4DF782D9F2470ED120F3424 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				6FD2018120F3031500235D06 /* Assets.xcassets */,
 				6FD2018320F3031500235D06 /* LaunchScreen.storyboard */,
 				6FD2018620F3031500235D06 /* Info.plist */,
+				6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */,
 			);
 			path = Smack;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD2018520F3031500235D06 /* LaunchScreen.storyboard in Resources */,
+				6FD201DD20F8495E00235D06 /* GoogleService-Info.plist in Resources */,
 				6FD2018220F3031500235D06 /* Assets.xcassets in Resources */,
 				6FD2018020F3031400235D06 /* Main.storyboard in Resources */,
 			);
@@ -228,16 +232,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Smack/Pods-Smack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

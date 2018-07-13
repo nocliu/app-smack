@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>394687913109-58t6co4mm4a6kkbchdjt5cd08bhescp4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.394687913109-58t6co4mm4a6kkbchdjt5cd08bhescp4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAKrTwUKNLfwNfN8SvO526bI-q4HaRenZU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>394687913109</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.concon.Smack</string>
+	<key>PROJECT_ID</key>
+	<string>smack-b32bb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smack-b32bb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:394687913109:ios:0f34c09b3b6bc7ab</string>
+	<key>DATABASE_URL</key>
+	<string>https://smack-b32bb.firebaseio.com</string>
+</dict>
+</plist>
