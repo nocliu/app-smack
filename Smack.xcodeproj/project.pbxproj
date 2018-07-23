@@ -19,6 +19,7 @@
 		6FD2019F20F581BB00235D06 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2019E20F581BB00235D06 /* LoginVC.swift */; };
 		6FD201A120F5842700235D06 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD201A020F5842700235D06 /* CreateAccountVC.swift */; };
 		6FD201DD20F8495E00235D06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */; };
+		6FD2022120FECD5500235D06 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2022020FECD5500235D06 /* AuthService.swift */; };
 		D61AAB4D5211F384506D7C4C /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6ACB9DCD534CAEBD56D347 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		6FD2019E20F581BB00235D06 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6FD201A020F5842700235D06 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FD2022020FECD5500235D06 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F4DF782D9F2470ED120F3424 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,15 +87,14 @@
 		6FD2017920F3031400235D06 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				6FD2021F20FECD4200235D06 /* Services */,
 				6FD2019B20F50F6C00235D06 /* Utilities */,
 				6FD2019420F43B3B00235D06 /* Model */,
 				6FD2019320F43B3400235D06 /* View */,
 				6FD2019220F43B2500235D06 /* Controller */,
 				6FD2018D20F3F0F600235D06 /* Supporting Files */,
 				6FD2017A20F3031400235D06 /* AppDelegate.swift */,
-				6FD2017E20F3031400235D06 /* Main.storyboard */,
 				6FD2018120F3031500235D06 /* Assets.xcassets */,
-				6FD2018320F3031500235D06 /* LaunchScreen.storyboard */,
 				6FD2018620F3031500235D06 /* Info.plist */,
 				6FD201DC20F8495E00235D06 /* GoogleService-Info.plist */,
 			);
@@ -125,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				6FD2019920F44A9E00235D06 /* GradientView.swift */,
+				6FD2017E20F3031400235D06 /* Main.storyboard */,
+				6FD2018320F3031500235D06 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +145,14 @@
 				6FD2019C20F50F8000235D06 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6FD2021F20FECD4200235D06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6FD2022020FECD5500235D06 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FA91C4CD86CC21964E10DF8A /* Pods */ = {
@@ -284,6 +295,7 @@
 				6FD2019820F43B7500235D06 /* ChannelVC.swift in Sources */,
 				6FD2019620F43B6200235D06 /* ChatVC.swift in Sources */,
 				6FD201A120F5842700235D06 /* CreateAccountVC.swift in Sources */,
+				6FD2022120FECD5500235D06 /* AuthService.swift in Sources */,
 				6FD2019F20F581BB00235D06 /* LoginVC.swift in Sources */,
 				6FD2019A20F44A9E00235D06 /* GradientView.swift in Sources */,
 				6FD2017B20F3031400235D06 /* AppDelegate.swift in Sources */,
