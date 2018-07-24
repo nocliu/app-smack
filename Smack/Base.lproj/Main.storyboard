@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBn-VE-DiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="-266.71664167916043"/>
+            <point key="canvasLocation" x="1078" y="-269"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="J5A-jn-k1k">
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TW-aG-Xbc">
-                                <rect key="frame" x="84" y="336" width="207" height="13"/>
+                                <rect key="frame" x="84" y="341" width="207" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="74Y-n0-EfG"/>
                                     <constraint firstAttribute="height" constant="13" id="O63-Ca-hRL"/>
@@ -184,8 +184,8 @@
                                     <action selector="createAccountButtonPressed:" destination="gZN-4x-S8v" eventType="touchUpInside" id="aCE-UD-fUS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-c5-kPf">
-                                <rect key="frame" x="62.5" y="286" width="250" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-c5-kPf" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="291" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HDx-t6-jBw"/>
@@ -194,6 +194,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbg-P3-p3x">
                                 <rect key="frame" x="62.5" y="190" width="250" height="17"/>
@@ -205,20 +210,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NR-Qd-nHH">
-                                <rect key="frame" x="62.5" y="235" width="250" height="17"/>
+                                <rect key="frame" x="62.5" y="231" width="250" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hZ-qx-vOf">
-                                <rect key="frame" x="62.5" y="254" width="250" height="2"/>
+                                <rect key="frame" x="62.5" y="259" width="250" height="2"/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.62352941176470589" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="59r-xL-zl1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUk-7M-puH">
-                                <rect key="frame" x="62.5" y="208" width="250" height="2"/>
+                                <rect key="frame" x="62.5" y="218" width="250" height="2"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="2NV-3j-5kD"/>
@@ -240,13 +245,13 @@
                             <constraint firstItem="LvU-iH-2a9" firstAttribute="top" secondItem="whY-kl-lU6" secondAttribute="top" constant="80" id="Llu-DB-kLR"/>
                             <constraint firstItem="7hZ-qx-vOf" firstAttribute="width" secondItem="7NR-Qd-nHH" secondAttribute="width" id="OxO-jU-8vs"/>
                             <constraint firstItem="bbg-P3-p3x" firstAttribute="top" secondItem="LvU-iH-2a9" secondAttribute="bottom" constant="50" id="WYZ-WX-JkB"/>
-                            <constraint firstItem="YUk-7M-puH" firstAttribute="top" secondItem="bbg-P3-p3x" secondAttribute="bottom" constant="1" id="YdT-Za-gaG"/>
-                            <constraint firstItem="7NR-Qd-nHH" firstAttribute="top" secondItem="YUk-7M-puH" secondAttribute="bottom" constant="25" id="d08-4S-igs"/>
+                            <constraint firstItem="YUk-7M-puH" firstAttribute="top" secondItem="bbg-P3-p3x" secondAttribute="bottom" constant="11" id="YdT-Za-gaG"/>
+                            <constraint firstItem="7NR-Qd-nHH" firstAttribute="top" secondItem="YUk-7M-puH" secondAttribute="bottom" constant="11" id="d08-4S-igs"/>
                             <constraint firstItem="whY-kl-lU6" firstAttribute="trailing" secondItem="UYV-sP-Rr8" secondAttribute="trailing" constant="16" id="gBP-mt-tmb"/>
                             <constraint firstItem="bbg-P3-p3x" firstAttribute="centerX" secondItem="bM2-V0-4do" secondAttribute="centerX" id="gar-tr-Fam"/>
                             <constraint firstItem="0TW-aG-Xbc" firstAttribute="centerX" secondItem="U3W-c5-kPf" secondAttribute="centerX" id="gdo-d0-bMk"/>
                             <constraint firstItem="UYV-sP-Rr8" firstAttribute="top" secondItem="whY-kl-lU6" secondAttribute="top" id="qwI-cW-jfZ"/>
-                            <constraint firstItem="7hZ-qx-vOf" firstAttribute="top" secondItem="7NR-Qd-nHH" secondAttribute="bottom" constant="2" id="wJu-C1-teT"/>
+                            <constraint firstItem="7hZ-qx-vOf" firstAttribute="top" secondItem="7NR-Qd-nHH" secondAttribute="bottom" constant="11" id="wJu-C1-teT"/>
                             <constraint firstItem="U3W-c5-kPf" firstAttribute="width" secondItem="7NR-Qd-nHH" secondAttribute="width" id="wVj-4B-2vd"/>
                             <constraint firstItem="0TW-aG-Xbc" firstAttribute="top" secondItem="U3W-c5-kPf" secondAttribute="bottom" constant="10" id="yNU-gr-2sk"/>
                         </constraints>
@@ -258,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pw9-jY-vlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="-267.61619190404798"/>
+            <point key="canvasLocation" x="1903" y="-269"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="tri-YH-KFj">
@@ -363,7 +368,7 @@
                                     <action selector="backgroundColorButtonPressed:" destination="B9W-zR-0Gf" eventType="touchUpInside" id="fgL-M1-i91"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SML-pv-0el">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SML-pv-0el" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -374,6 +379,11 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createAccountButtonPressed:" destination="B9W-zR-0Gf" eventType="touchUpInside" id="kWY-aZ-cdw"/>
                                 </connections>
@@ -410,7 +420,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUM-ob-WKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="BZo-IV-hbs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2792.8000000000002" y="-268.51574212893553"/>
+            <point key="canvasLocation" x="2770" y="-269"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="knD-Nf-f4b">
@@ -462,7 +472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wM-ee-yHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="768"/>
+            <point key="canvasLocation" x="1060" y="531"/>
         </scene>
     </scenes>
     <resources>
