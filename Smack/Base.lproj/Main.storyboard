@@ -258,6 +258,8 @@
                         <viewLayoutGuide key="safeArea" id="whY-kl-lU6"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="7NR-Qd-nHH" id="SHC-1y-4N5"/>
+                        <outlet property="usernameTxt" destination="bbg-P3-p3x" id="KFK-YI-lue"/>
                         <segue destination="B9W-zR-0Gf" kind="show" identifier="toCreateAccount" id="E5I-sl-9VK"/>
                     </connections>
                 </viewController>
@@ -298,6 +300,11 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.27422551296613495" green="0.48228087134099851" blue="0.61964283495329942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZR-yY-Jd2">
                                         <rect key="frame" x="0.0" y="28" width="250" height="2"/>
@@ -312,6 +319,11 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.27422551299999998" green="0.48228087130000002" blue="0.61964283499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-I8-ogu">
                                         <rect key="frame" x="0.0" y="69" width="250" height="2"/>
@@ -326,6 +338,11 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.27422551299999998" green="0.48228087130000002" blue="0.61964283499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-E0-HsF">
                                         <rect key="frame" x="0.0" y="110" width="250" height="2"/>

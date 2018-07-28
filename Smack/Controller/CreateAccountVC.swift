@@ -23,6 +23,17 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+    }
+    
+    func setUpView() {
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
+    }
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,6 +43,21 @@ class CreateAccountVC: UIViewController {
             if avatarName.contains("light") && backgroundColor == nil {
                 userImg.backgroundColor = UIColor.gray
             }
+        }
+    }
+    
+    @IBAction func chooseAvatarButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
+    }
+    
+    @IBAction func backgroundColorButtonPressed(_ sender: Any) {
+        let r = CGFloat(arc4random_uniform(255))/255
+        let g = CGFloat(arc4random_uniform(255))/255
+        let b = CGFloat(arc4random_uniform(255))/255
+        
+        backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        UIView.animate(withDuration: 0.2) {
+            self.userImg.backgroundColor = self.backgroundColor
         }
     }
     
@@ -53,25 +79,6 @@ class CreateAccountVC: UIViewController {
                 })
             }
         }
-    }
-    
-    @IBAction func chooseAvatarButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
-    }
-    
-    @IBAction func backgroundColorButtonPressed(_ sender: Any) {
-        let r = CGFloat(arc4random_uniform(255))/255
-        let g = CGFloat(arc4random_uniform(255))/255
-        let b = CGFloat(arc4random_uniform(255))/255
-        
-        backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        UIView.animate(withDuration: 0.2) {
-            self.userImg.backgroundColor = self.backgroundColor
-        }
-    }
-    
-    @IBAction func closeButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
     }
     
 }
