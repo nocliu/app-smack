@@ -15,6 +15,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // Variables
     var avatarName = "profileDefault"
@@ -27,6 +28,7 @@ class CreateAccountVC: UIViewController {
     }
     
     func setUpView() {
+        activityIndicator.isHidden = true
         usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
         emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
         passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes:[NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.384916704, green: 0.6769536554, blue: 0.869761807, alpha: 1)])
@@ -62,6 +64,9 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func createAccountButtonPressed(_ sender: Any) {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        
         guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let password = passwordTxt.text , passwordTxt.text != "" else { return }
@@ -72,6 +77,8 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColorName, completion: { (success) in
                             if success {
+                                self.activityIndicator.isHidden = true
+                                self.activityIndicator.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
                             }
                         })

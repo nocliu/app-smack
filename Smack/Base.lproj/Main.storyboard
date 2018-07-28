@@ -404,11 +404,17 @@
                                     <action selector="createAccountButtonPressed:" destination="B9W-zR-0Gf" eventType="touchUpInside" id="kWY-aZ-cdw"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Flw-Tc-dTq">
+                                <rect key="frame" x="169" y="525.5" width="37" height="37"/>
+                                <color key="color" red="0.24313725489999999" green="0.28235294119999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cS1-xy-ZP9" firstAttribute="top" secondItem="b3M-EC-e4s" secondAttribute="bottom" constant="55" id="6Te-Qu-hZJ"/>
+                            <constraint firstItem="Flw-Tc-dTq" firstAttribute="centerX" secondItem="G7d-oe-rjU" secondAttribute="centerX" id="BWM-Yj-LaV"/>
                             <constraint firstItem="b3M-EC-e4s" firstAttribute="centerX" secondItem="G7d-oe-rjU" secondAttribute="centerX" id="GZH-jB-OR7"/>
+                            <constraint firstItem="Flw-Tc-dTq" firstAttribute="top" secondItem="12Y-H3-phf" secondAttribute="bottom" constant="45" id="KeV-li-5pK"/>
                             <constraint firstItem="9lp-IU-nCb" firstAttribute="bottom" secondItem="SML-pv-0el" secondAttribute="bottom" constant="20" id="Oau-2i-K1U"/>
                             <constraint firstItem="9lp-IU-nCb" firstAttribute="trailing" secondItem="tCO-5v-X6k" secondAttribute="trailing" constant="16" id="QaJ-iI-tA1"/>
                             <constraint firstItem="SML-pv-0el" firstAttribute="centerX" secondItem="G7d-oe-rjU" secondAttribute="centerX" id="fIv-FH-rbw"/>
@@ -426,6 +432,7 @@
                         <viewLayoutGuide key="safeArea" id="9lp-IU-nCb"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Flw-Tc-dTq" id="dGH-nh-vPn"/>
                         <outlet property="emailTxt" destination="l03-wm-nZs" id="SUn-Iy-tW4"/>
                         <outlet property="passwordTxt" destination="vK9-Gl-gTI" id="7v5-eU-pvS"/>
                         <outlet property="userImg" destination="cS1-xy-ZP9" id="ukW-mZ-fMV"/>
