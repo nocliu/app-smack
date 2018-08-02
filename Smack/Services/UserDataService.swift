@@ -30,6 +30,18 @@ class UserDataService {
         self.avatarName = avatarName
     }
     
+    func logoutUser() {
+        self.id = ""
+        self.avatarColor = ""
+        self.avatarName = "menuProfileIcon"
+        self.email = ""
+        self.name = ""
+        
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
+    }
+    
     func returnUIColor(components: String) -> UIColor {
         let defaultColor = UIColor.lightGray
         
