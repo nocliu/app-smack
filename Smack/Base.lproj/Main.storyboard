@@ -200,6 +200,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="gZN-4x-S8v" eventType="touchUpInside" id="N2V-Qf-3yc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbg-P3-p3x">
                                 <rect key="frame" x="62.5" y="190" width="250" height="17"/>
@@ -230,10 +233,15 @@
                                     <constraint firstAttribute="height" constant="2" id="2NV-3j-5kD"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-gn-gJh">
+                                <rect key="frame" x="169" y="525.5" width="37" height="37"/>
+                                <color key="color" red="0.24313725489999999" green="0.28235294119999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LvU-iH-2a9" firstAttribute="leading" secondItem="whY-kl-lU6" secondAttribute="leading" constant="125" id="2u8-hh-jSN"/>
+                            <constraint firstItem="5Sv-gn-gJh" firstAttribute="centerX" secondItem="bM2-V0-4do" secondAttribute="centerX" id="3DG-iw-QiK"/>
                             <constraint firstItem="U3W-c5-kPf" firstAttribute="top" secondItem="7hZ-qx-vOf" secondAttribute="bottom" constant="30" id="5Kp-go-nmz"/>
                             <constraint firstItem="7NR-Qd-nHH" firstAttribute="width" secondItem="bbg-P3-p3x" secondAttribute="width" id="9Mc-ef-APX"/>
                             <constraint firstItem="YUk-7M-puH" firstAttribute="width" secondItem="bbg-P3-p3x" secondAttribute="width" id="E2q-fw-EoA"/>
@@ -245,6 +253,7 @@
                             <constraint firstItem="YUk-7M-puH" firstAttribute="centerX" secondItem="bM2-V0-4do" secondAttribute="centerX" id="KQB-aJ-8pO"/>
                             <constraint firstItem="LvU-iH-2a9" firstAttribute="top" secondItem="whY-kl-lU6" secondAttribute="top" constant="80" id="Llu-DB-kLR"/>
                             <constraint firstItem="7hZ-qx-vOf" firstAttribute="width" secondItem="7NR-Qd-nHH" secondAttribute="width" id="OxO-jU-8vs"/>
+                            <constraint firstItem="5Sv-gn-gJh" firstAttribute="top" secondItem="0TW-aG-Xbc" secondAttribute="bottom" constant="171.5" id="Tep-Um-TIL"/>
                             <constraint firstItem="bbg-P3-p3x" firstAttribute="top" secondItem="LvU-iH-2a9" secondAttribute="bottom" constant="50" id="WYZ-WX-JkB"/>
                             <constraint firstItem="YUk-7M-puH" firstAttribute="top" secondItem="bbg-P3-p3x" secondAttribute="bottom" constant="11" id="YdT-Za-gaG"/>
                             <constraint firstItem="7NR-Qd-nHH" firstAttribute="top" secondItem="YUk-7M-puH" secondAttribute="bottom" constant="11" id="d08-4S-igs"/>
@@ -260,6 +269,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTxt" destination="7NR-Qd-nHH" id="SHC-1y-4N5"/>
+                        <outlet property="spinner" destination="5Sv-gn-gJh" id="Ksb-jR-sup"/>
                         <outlet property="usernameTxt" destination="bbg-P3-p3x" id="KFK-YI-lue"/>
                         <segue destination="B9W-zR-0Gf" kind="show" identifier="toCreateAccount" id="E5I-sl-9VK"/>
                     </connections>
