@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="119" width="315" height="445"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VUB-7x-SVY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="VUB-7x-SVY" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="315" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUB-7x-SVY" id="ffg-x6-0gK">
@@ -106,6 +106,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelLabel" destination="0Uf-sG-dBL" id="wiv-ed-zbi"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -132,6 +135,7 @@
                     <connections>
                         <outlet property="loginButton" destination="KX2-i6-1ad" id="bpd-h0-B2o"/>
                         <outlet property="profileImage" destination="n6f-XY-PtD" id="WPY-sh-icL"/>
+                        <outlet property="tableView" destination="92t-HW-lex" id="aFB-t1-EFl"/>
                         <segue destination="gZN-4x-S8v" kind="show" identifier="toLogin" id="xvm-II-d4s"/>
                     </connections>
                 </viewController>
