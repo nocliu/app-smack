@@ -21,10 +21,17 @@ class ProfileVC: UIViewController {
     }
     
     func setUpView() {
+        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
+        backgroundView.addGestureRecognizer(closeTouch)
+        
         profileImage.image = UIImage(named: UserDataService.instance.avatarName)
         profileImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         nameLabel.text = UserDataService.instance.name
         emailLabel.text = UserDataService.instance.email
+    }
+    
+    @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeButtonPressed(_ sender: Any) {

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Smack" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="oGk-ZX-93j" id="6T1-kW-cOM"/>
                 <outlet property="emailLabel" destination="cHf-hV-TeH" id="CyA-7l-icz"/>
                 <outlet property="nameLabel" destination="8DS-z0-AMV" id="qt0-wN-XeK"/>
                 <outlet property="profileImage" destination="bIC-KQ-5H5" id="M5a-c4-LvM"/>
@@ -22,6 +23,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-ZX-93j" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sS-fT-1MX">
                     <rect key="frame" x="20" y="153.5" width="335" height="360"/>
                     <subviews>
@@ -91,8 +96,12 @@
             </subviews>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9sS-fT-1MX" secondAttribute="trailing" constant="20" id="00o-O7-9iN"/>
+                <constraint firstItem="oGk-ZX-93j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1C5-YF-DnY"/>
+                <constraint firstAttribute="bottom" secondItem="oGk-ZX-93j" secondAttribute="bottom" id="1u6-f2-YkI"/>
                 <constraint firstItem="9sS-fT-1MX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2Wc-MB-IlK"/>
+                <constraint firstAttribute="trailing" secondItem="oGk-ZX-93j" secondAttribute="trailing" id="CbC-uz-zeb"/>
                 <constraint firstItem="9sS-fT-1MX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="J8q-X8-dt7"/>
+                <constraint firstItem="oGk-ZX-93j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ysI-GI-4lc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="39.5" y="53.5"/>

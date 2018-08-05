@@ -63,6 +63,9 @@
                                     <constraint firstAttribute="width" constant="22" id="Krb-ii-CVg"/>
                                 </constraints>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelButtonPressed:" destination="w20-gZ-rqh" eventType="touchUpInside" id="ewq-8Y-7Y4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-i6-1ad">
                                 <rect key="frame" x="107" y="591.5" width="54" height="36"/>
