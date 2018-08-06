@@ -600,6 +600,7 @@
                         <viewLayoutGuide key="safeArea" id="svh-VL-5dE"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="Bu4-be-OZP" id="8v0-3w-8cV"/>
                         <outlet property="menuButton" destination="hum-04-8mT" id="h4D-Br-lPG"/>
                     </connections>
                 </viewController>
